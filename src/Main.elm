@@ -5,7 +5,7 @@ import Browser
 import HTMLModuleAdd exposing (addBook, addError, addSuccess, loadingBook)
 import HTMLModuleGet exposing (getBooks, getError, loadingUser, showBooks)
 import Html exposing (..)
-import Bootstrap.Grid as Grid exposing (Column)
+import Bootstrap.Grid exposing (Column)
 import HTMLModules exposing (grid, notImplemented)
 import Types exposing (..)
 
@@ -22,6 +22,7 @@ init _ = ((AddForm (Book "" (Author "")) (User "" []), GetForm ""), Cmd.none)
 update : Message -> Model -> (Model, Cmd Message)
 update message model =
     case message of
+        --GetModule related
         GetBooks username ->
             ((Tuple.first model, GetLoading username), ApiFacade.getBooks username)
         BooksResult res ->
@@ -31,6 +32,7 @@ update message model =
                Err error -> ((Tuple.first model, GetFailure error), Cmd.none)
         UsernameChanged username ->
             ((Tuple.first model, GetForm username),Cmd.none)
+        --AddModule related
         BookChanged user book field new->
             ((AddForm (updateBook book field new) user, Tuple.second model), Cmd.none)
         AddUserChanged book user new ->

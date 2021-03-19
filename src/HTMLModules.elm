@@ -1,22 +1,12 @@
 module HTMLModules exposing (..)
 
-import ApiFacade exposing (errorToString)
-import Bootstrap.Spinner as Spinner
-import Bootstrap.Text as Text
 import Html exposing (..)
-import Html.Attributes exposing (style)
-import Http
 import Types exposing (Book, BookChange(..), Message(..), Model, Msg, User)
 import Bootstrap.CDN as CDN
 import Bootstrap.Grid as Grid exposing (Column)
 import Bootstrap.Grid.Col as Col
-import Bootstrap.Form as Form
-import Bootstrap.Form.Input as Input
-import Bootstrap.Button as Button
-import Bootstrap.ButtonGroup as ButtonGroup
 import Bootstrap.Card as Card
 import Bootstrap.Card.Block as Block
-import Bootstrap.Table as Table exposing (Row)
 
 grid : Column Message -> Column Message -> Html Message
 grid view1 view2  =

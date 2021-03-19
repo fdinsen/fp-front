@@ -23,6 +23,17 @@ getBooks username =
         [getBooksForm username
         ]
 
+getBooksForm : String -> Html Message
+getBooksForm username =
+        Form.form []
+                     [Form.group []
+                        [Form.label [] [text ("Username\n")]
+                        ,Input.text [Input.value username, Input.onInput <| UsernameChanged ]
+                        ]
+                     ,ButtonGroup.buttonGroup [ButtonGroup.attrs [style "text-align" "center"]]
+                        [ButtonGroup.button [Button.primary, Button.onClick <| GetBooks username ] [text ("Get Books")]]
+                     ]
+
 showBooks : String -> User -> Column Message
 showBooks username user =
     card
@@ -43,17 +54,6 @@ showBook book =
         [Table.td [] [text book.title]
         ,Table.td [] [text book.author.name]
         ]
-
-getBooksForm : String -> Html Message
-getBooksForm username =
-        Form.form []
-                     [Form.group []
-                        [Form.label [] [text ("Username\n")]
-                        ,Input.text [Input.value username, Input.onInput <| UsernameChanged ]
-                        ]
-                     ,ButtonGroup.buttonGroup [ButtonGroup.attrs [style "text-align" "center"]]
-                        [ButtonGroup.button [Button.primary, Button.onClick <| GetBooks username ] [text ("Get Books")]]
-                     ]
 
 loadingUser : String -> Column Message
 loadingUser username =

@@ -9,9 +9,11 @@ type alias Model =
     )
 
 type Message
+    -- GetModule related
     = GetBooks String
     | BooksResult (Result Http.Error User)
     | UsernameChanged String
+    -- AddModule related
     | AddResult (Result Http.Error Msg)
     | BookChanged User Book BookChange String
     | AddUserChanged Book User String

@@ -8,6 +8,7 @@
 <p>The model is a Tuple that holds two sub-models, one for the "add book" module and one for the "get books" module. </p>
 <p>The system uses Elm-Bootstrap-5.2.0 to format the view.</p>
 <p>Both modules are visible at once and are updated independent of eachother.</p>
+<p>A picture of this can be seen in example.png</p>
 
 <br>
 <p>As mentioned above, Model is a Tuple of AddModel and GetModel, each containing the state of their own respective side of the application.</p>
