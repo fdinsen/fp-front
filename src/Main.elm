@@ -2,9 +2,11 @@ module Main exposing (..)
 
 import ApiFacade
 import Browser
+import HTMLModuleAdd exposing (addBook, addError, addSuccess, loadingBook)
+import HTMLModuleGet exposing (getBooks, getError, loadingUser, showBooks)
 import Html exposing (..)
 import Bootstrap.Grid as Grid exposing (Column)
-import HTMLModules exposing (addBook, addError, addSuccess, getBooks, getError, grid, loadingBook, loadingUser, notImplemented, showBooks)
+import HTMLModules exposing (grid, notImplemented)
 import Types exposing (..)
 
 main = Browser.element
