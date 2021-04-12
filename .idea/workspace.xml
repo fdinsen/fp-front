@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e26236f2-0276-4874-8620-eb847eb4817f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HTMLModuleGet.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/HTMLModuleGet.elm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HTMLModules.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/HTMLModules.elm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.elm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Types.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/Types.elm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/ApiFacade.elmo" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/ApiFacade.elmo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/d.dat" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/d.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiFacade.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiFacade.elm" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +40,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Elm Projects" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="org.elm.workspace.PROJECT_DISCOVERY" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -65,6 +64,13 @@
       <workItem from="1616055365619" duration="4198000" />
       <workItem from="1616068518616" duration="707000" />
       <workItem from="1616069696949" duration="20549000" />
+      <workItem from="1616195154720" duration="334000" />
+      <workItem from="1616492095251" duration="2163000" />
+      <workItem from="1616761898514" duration="1792000" />
+      <workItem from="1617387534882" duration="1275000" />
+      <workItem from="1617815175389" duration="8250000" />
+      <workItem from="1618055619140" duration="597000" />
+      <workItem from="1618232490547" duration="4526000" />
     </task>
     <servers />
   </component>
@@ -72,17 +78,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1616070590030">
+    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1617387616425">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1616070590030" />
+    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1617387616425" />
     <state x="783" y="345" key="SettingsEditor" timestamp="1616069686239">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="783" y="345" key="SettingsEditor/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1616069686239" />
-    <state x="988" y="527" key="com.intellij.ide.util.TipDialog" timestamp="1616069697021">
+    <state x="988" y="527" key="com.intellij.ide.util.TipDialog" timestamp="1618232487056">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="988" y="527" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1616069697021" />
+    <state x="988" y="527" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1618232487056" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1618232959403">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1618232959403" />
   </component>
 </project>

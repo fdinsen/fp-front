@@ -7,13 +7,15 @@ import Encoder as Encoder
 
 getBooks : String -> Cmd Message
 getBooks username = Http.get
-    { url = "https://fdinsen.com/fp-back/api/book/booksbyuser/" ++ username
+    { --url = "https://fdinsen.com/fp-back/api/book/booksbyuser/" ++ username
+    url = "http://localhost:4711/book/frederik"
     , expect = Http.expectJson BooksResult Decoder.userDecoder
     }
 
 postBook : Book -> String -> Cmd Message
 postBook book username = Http.post
-    { url = "https://fdinsen.com/fp-back/api/book/add/" ++ username
+    { --url = "https://fdinsen.com/fp-back/api/book/add/" ++ username
+    url = "http://localhost:4711/book/add"
     , body = Http.jsonBody (Encoder.encodeBook book)
     , expect = Http.expectJson AddResult Decoder.msgDecoder
     }
